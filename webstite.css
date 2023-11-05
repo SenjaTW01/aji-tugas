@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    box-shadow: 1px 1px 8px #9DB2BF;
+    padding:20px 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.logo {
+    display: inline;
+    user-select: none;
+    margin:0px 0px 8px 0px;
+}
+
+.brand-logo img {
+    left:0;
+    width: 100px;
+    height: 60px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #219C90;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left:50px;
+}
+
+.navigation a i {
+    display: inline;
+    font-size: 20px;
+    margin-right: 3px;
+    top: 15px;
+}
+
+.navigation a:hover {
+    color: #219C90;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #219C90;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .2s;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btn-login {
+    margin-left: 30px;
+    width: 95px;
+    height: 45px;
+    border-radius: 12px;
+    background: transparent;
+    outline: none;
+    border:2px solid #219C90;
+    color:#219C90;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 10px;
+    transition: .3s;
+    display: inline;
+    text-align: center;
+}
+
+.btn-login:hover{
+    color: #fff;
+    background-color: #219C90;
+}
+
+.active-tbl {
+    background-color: #219C90;
+    color: #fff;
+    border: none;
+}
+
+.active-tbl:hover {
+    background-color: #36c4b5;
+    color: #fff;
+} 
+
+section{
+    display: flex;
+    margin-bottom: 20px;
+    padding:50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar {
+    position: relative;
+}
+
+.gambar .aji img {
+    align-self: center;
+    margin-left:45px; 
+    position: relative;
+    width: 100%;
+    height: 550px;
+}
+
+.gambar span svg { 
+    position: absolute;
+    bottom:0;
+    z-index:-10;
+    top:30px;
+    left: 0;
+    transform: translateX(-200px);
+}
+
+.kolom {
+    margin-top: 180px;
+    padding:90px;
+}
+
+.kolom .btn-1,
+.kolom .btn-2 {
+    border-radius: 10px;
+}
+
+article{
+    line-height: 25px;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 400;
+    opacity: 60%;
+    margin-top: 20px;
+    margin-bottom:30px;
+}
+
+address {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 400;
+    opacity: 50%;
+}
+
+address hr {
+    margin-top:7px;
+    border-bottom: 1px solid black;
+    opacity: 20%;
+}
+
+address a {
+    opacity: 60%;
+    color:#0A4D68;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color:#088395;
+    font-size: 25px;
+}
+
+article a {
+    color: #088395;
+    text-decoration: none;
+}
+
+article a:hover{
+    text-decoration: underline;
+}
+
+.title {
+    margin-bottom: 22px;
+}
+
+.title h2 {
+    font-size:35px;
+    font-weight:bold;
+    color: #088395;
+    bottom:0;
+}
+
+.title b {
+    font-size:16px;
+    font-weight:bold;
+    color: #0A4D68;
+    opacity: 60%;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    color: #088395;
+    margin-top: 12px;
+    background:transparent;
+    border-radius:25px;
+    outline: none;
+    border: 2px solid #088395;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background-color: #088395;
+    color:#fff;
+}
+
+.btn-2 {
+    width: 180px;
+    height: 50px;
+}
+
+.icon {
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon i {
+    margin: 10px 0 10px 5px;
+    color: #088395;
+    margin-right: 6px;
+    transition: .2s;
+}
+
+.icon a i:hover{
+    color: #16aec5;
+}
+
+.skill-me {
+    margin-top: 30px;
+}
+
+.skill-me label {
+    color: #0A4D68;
+    font-size: 18px;
+    opacity: 80%;
+}
+
+.skill-me progress {
+    width: 100%;
+    height: 20px;
+    opacity: 60%;
+    margin-bottom: 25px;
+}
+
+.skill-me .html progress {
+    accent-color: #D83F31;
+}
+
+.skill-me .css progress {
+    accent-color: #0079FF;
+}
+
+.skill-me .design progress {
+    accent-color: #019267;
+}
+
+.skill-me .programming progress {
+    accent-color: #0079FF;
+}
+
+.skill-me .analist progress {
+    accent-color: #164863;
+}
+
+footer {
+    display: flex;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    color:#cfcece;
+    font-size: 16px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.content-footer h2 {
+    text-align: center;
+    top:15px;
+    margin-bottom: 8px;
+}
+
+p #pembuat {
+    font-size: 16px;
+    color: #969393;
+    opacity: 80%;
+}
+
+p #pembuat:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
